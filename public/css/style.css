@@ -428,7 +428,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(29 78 216 / var(--tw-text-opacity));
+  color: rgb(73 76 95 / var(--tw-text-opacity));
 }
 
 *, ::before, ::after {
@@ -511,21 +511,144 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .card {
+  margin-bottom: 1rem;
+  height: 24rem;
+  width: 20rem;
+  border-radius: 0.5rem;
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
   --tw-gradient-from: hsl(236, 72%, 79%);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, hsl(236 72% 79% / 0));
   --tw-gradient-to: hsl(237, 63%, 64%);
 }
 
+.btn {
+  height: 2.5rem;
+  width: 80%;
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-monst {
+  font-family: Montserrat, sans-serif;
 }
 
 .text-\[15px\] {
   font-size: 15px;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .text-blue-primary {
   --tw-text-opacity: 1;
   color: hsl(236 72% 79% / var(--tw-text-opacity));
+}
+
+.text-\[\#6D708D\] {
+  --tw-text-opacity: 1;
+  color: rgb(109 112 141 / var(--tw-text-opacity));
 }

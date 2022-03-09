@@ -4,12 +4,16 @@
 
 @layer base {
   .title {
-    @apply text-2xl text-blue-700 font-bold;
+    @apply text-2xl text-[#494C5F] font-bold;
   }
 }
 
 @layer components {
   .card {
-    @apply bg-gradient-to-r from-blue-primary to-violet-primary;
+    @apply bg-gradient-to-r from-blue-primary to-violet-primary w-80 h-96 rounded-lg mb-4;
+  }
+
+  .btn {
+    @apply w-4/5 h-10 rounded-md bg-blue-900;
   }
 }
