@@ -4,16 +4,31 @@
 
 @layer base {
   .title {
-    @apply text-2xl text-[#494C5F] font-bold;
+    @apply text-[#494C5F] font-bold;
+  }
+
+  .price {
+    @apply text-6xl font-bold;
+  }
+
+  .btn {
+    @apply tracking-widest;
   }
 }
 
 @layer components {
   .card {
-    @apply bg-gradient-to-r from-blue-primary to-violet-primary w-80 h-96 rounded-lg mb-4;
+    @apply bg-white-ghost rounded-lg mb-4 text-center p-9 text-[#494c5f];
+    /* @apply bg-gradient-to-r from-blue-primary to-violet-primary rounded-lg mb-4 text-center ; */
+    min-width: 327px;
+    min-height: 453px;
+  }
+
+  .bg-primary {
+    @apply bg-gradient-to-r from-blue-primary to-violet-primary rounded-lg text-center;
   }
 
   .btn {
-    @apply w-4/5 h-10 rounded-md bg-blue-900;
+    @apply w-full h-12 p-2  rounded-md bg-blue-900;
   }
 }
