@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .title {
+    @apply text-2xl text-blue-700 font-bold;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-gradient-to-r from-blue-primary to-violet-primary;
+  }
+}
