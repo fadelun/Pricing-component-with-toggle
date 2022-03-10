@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  .title {
-    @apply text-[#494C5F] font-bold;
-  }
-
   .price {
     @apply text-6xl font-bold;
   }
@@ -18,11 +14,18 @@
 
 @layer components {
   .card {
-    @apply bg-white-ghost rounded-lg mb-4 text-center p-9 text-[#494c5f];
+    @apply bg-white rounded-lg mb-4 text-center p-9 text-[#494c5f] drop-shadow-xl;
     /* @apply bg-gradient-to-r from-blue-primary to-violet-primary rounded-lg mb-4 text-center ; */
     min-width: 327px;
     min-height: 453px;
   }
+
+  /* .bg-page {
+    @apply bg-no-repeat bg-right-top bg-[url('../images/bg-top.svg','../images/bg-bottom.svg');
+
+    background-size: 60%;
+    background-position: 60vw top;
+  } */
 
   .bg-primary {
     @apply bg-gradient-to-r from-blue-primary to-violet-primary rounded-lg text-center;
