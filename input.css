@@ -14,18 +14,14 @@
 
 @layer components {
   .card {
-    @apply bg-white rounded-lg mb-4 text-center p-9 text-[#494c5f] drop-shadow-xl;
-    /* @apply bg-gradient-to-r from-blue-primary to-violet-primary rounded-lg mb-4 text-center ; */
-    min-width: 327px;
-    min-height: 453px;
+    @apply bg-white rounded-lg mb-4 lg:mb-0 text-center p-8 text-[#494c5f] drop-shadow-xl mx-auto lg:mx-0 lg:w-full;
   }
 
-  /* .bg-page {
-    @apply bg-no-repeat bg-right-top bg-[url('../images/bg-top.svg','../images/bg-bottom.svg');
-
-    background-size: 60%;
-    background-position: 60vw top;
-  } */
+  .bg-page {
+    background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
+    height: 100vh;
+    background-position: top -2rem right, bottom left;
+  }
 
   .bg-primary {
     @apply bg-gradient-to-r from-blue-primary to-violet-primary rounded-lg text-center;
@@ -33,5 +29,12 @@
 
   .btn {
     @apply w-full h-12 p-2  rounded-md bg-blue-900;
+  }
+
+  @media (max-width: 1024px) {
+    .card {
+      max-width: 327px;
+      max-height: 453px;
+    }
   }
 }
