@@ -6,9 +6,11 @@
   .price {
     @apply text-6xl font-bold;
   }
-
   .btn {
     @apply tracking-widest;
+  }
+  .attribution {
+    @apply text-center text-transparent hover:text-black text-xs  w-auto mx-auto;
   }
 }
 
@@ -29,12 +31,5 @@
 
   .btn {
     @apply w-full h-12 p-2  rounded-md bg-blue-900;
-  }
-
-  @media (max-width: 1024px) {
-    .card {
-      max-width: 327px;
-      max-height: 453px;
-    }
   }
 }
