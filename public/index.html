@@ -24,9 +24,9 @@
               Annually
             </span>
             <!-- <div class="w-10 h-4 rounded-full bg-red-500"></div> -->
-            <!-- toogle btn -->
+            <!-- toggle btn -->
             <label class="switch bg-primary rounded-full">
-              <input type="checkbox">
+              <input id="toggle-btn" type="checkbox" >
               <span class="slider round"></span>
             </label>
             <span class="px-4">
@@ -42,7 +42,7 @@
         <div class="card font-bold"> 
           <h4 class="title text-[#494C5F]">Basic</h4>
           <!-- <p class="price my-7">$19.99</p> -->
-          <p class="price my-7">$199.99</p>
+          <p class="price flex items-center justify-center my-7"><span class="dollar">$</span>199.99</p>
           <ul class="mb-6">
             <li class="list border-y-[1px] border-y-[#6d708d41] py-5">500 GB Storage</li>
             <li class="list py-5">2 Users Allowed </li>
@@ -57,7 +57,7 @@
         <div class="card bg-primary font-bold text-white-ghost lg:min-h-full lg:py-14">
           <h4 class="title">Professional</h4>
           <!-- <p class="price">$24.99</p> -->
-          <p class="price my-7">$249.99</p>
+          <p class="price flex items-center justify-center my-7"><span class="dollar">$</span>249.99</p>
           <ul class="mb-6">
             <li class="list border-y-[1px] border-y-[#ffffff46] py-5">1 TB Storage</li>
             <li class="list py-5">5 Users Allowed</li>
@@ -70,7 +70,7 @@
         <div class="card font-bold">
           <h4 class="title">Master</h4>
           <!-- <p class="price">$39.99</p> -->
-          <p class="price my-7">$399.99</p>
+          <p class="price flex items-center justify-center my-7"> <span class="dollar">$</span>399.99</p>
           <ul class="mb-6">
             <li class="list py-5 border-y-[1px] border-y-[#6d708d41]"> 2 TB Storage</li>
             <li class="list py-5">10 Users Allowed</li>
@@ -85,7 +85,42 @@
     </div>
     
     
-    
+    <script>
+      // daftar harga
+      const pricesList = 
+        [
+           ["199.99", "19.99"],
+        
+           ["249.99","24.99"],
+        
+          ["399.99", "39.99"],
+        
+    ]
+
+      const toggle = document.getElementById('toggle-btn');
+      const prices = document.querySelectorAll('.price');
+
+      // function untuk toggle button
+      toggle.addEventListener('click', () => {
+
+        
+        [...prices].map((price, i) => {
+          if(toggle.checked){
+            // ketika toggle buttonnya diklik maka harga pada price berubah(Monthly)
+
+            price.lastChild.nodeValue  = pricesList[i][1]
+            console.log(price.lastChild.nodeValue)
+            }else{
+              // ketika toggle buttonnya diklik maka harga pada price berubah(Annually)
+              price.lastChild.nodeValue  = pricesList[i][0]
+            console.log(price.lastChild.nodeValue)
+            }
+        })
+      
+      
+    })
+
+    </script>
 
   </body>
 </html>

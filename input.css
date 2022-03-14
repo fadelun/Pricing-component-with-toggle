@@ -9,6 +9,9 @@
   .btn {
     @apply tracking-widest;
   }
+  .dollar {
+    @apply text-4xl pr-2;
+  }
   .attribution {
     @apply text-center text-transparent hover:text-black text-xs  w-auto mx-auto;
   }
