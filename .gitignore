@@ -13,8 +13,12 @@
 
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
+*.json
+*.md
+
 
 # folder
 node_modules/
 design/
-images/
+
+
