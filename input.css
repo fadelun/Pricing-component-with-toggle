@@ -4,10 +4,10 @@
 
 @layer base {
   .price {
-    @apply text-6xl font-bold;
+    @apply text-7xl font-bold;
   }
   .btn {
-    @apply tracking-widest;
+    @apply tracking-widest text-base;
   }
   .dollar {
     @apply text-4xl pr-2;
@@ -19,13 +19,13 @@
 
 @layer components {
   .card {
-    @apply bg-white rounded-lg mb-4 lg:mb-0 text-center p-8 text-[#494c5f] drop-shadow-xl mx-auto lg:mx-0 lg:w-full;
+    @apply bg-white rounded-lg mb-4 lg:mb-0 text-lg text-center p-8 text-[#494c5f] drop-shadow-xl mx-auto lg:mx-0 lg:w-full;
   }
 
   .bg-page {
     background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
     height: 100vh;
-    background-position: top -2rem right, bottom left;
+    background-position: top right, bottom left;
   }
 
   .bg-primary {
@@ -33,6 +33,6 @@
   }
 
   .btn {
-    @apply w-full h-12 p-2  rounded-md bg-blue-900;
+    @apply w-full h-12 p-2  rounded-md;
   }
 }
