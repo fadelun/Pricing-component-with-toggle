@@ -8,49 +8,39 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <!-- tailwind css -->
     <link rel="stylesheet" href="./src/css/style.css" />
-<!-- style untuk tombol toogle -->
-    <link rel="stylesheet" href="./src/css/toggle.css">
+    <!-- style untuk tombol toogle -->
+    <link rel="stylesheet" href="./src/css/toggle.css" />
 
     <title>Frontend Mentor | [Challenge Name Here]</title>
-
   </head>
-  <body class="text-[15px] font-monst bg-white-ghost  bg-background-top lg:bg-page bg-[top_-2rem_right_-13rem] bg-no-repeat">
+  <body class="text-[15px] font-monst bg-white-ghost bg-background-top lg:bg-page bg-[top_-2rem_right_-13rem] bg-no-repeat">
+    <div class="container mx-auto lg:h-full">
+      <header class="py-14 mb-6 text-center">
+        <h1 class="text-3xl text-[#70738e] font-bold mb-7">Our Pricing</h1>
+        <div id="toggle" class="text-[#c4c4c4] font-bold w-full flex justify-center items-center">
+          <span class="px-4"> Annually </span>
 
-    <div class="container mx-auto lg:h-full ">
-      <header class=" py-14 mb-6 text-center">
-        <h3 class="text-3xl text-[#70738e] font-bold mb-7">Our Pricing</h2>
-          <div id="toggle" class="text-[#c4c4c4] font-bold w-full flex justify-center items-center">
-            <span class="px-4">
-              Annually
-            </span>
-            
-            <!-- toggle btn -->
-            <label class="switch bg-primary hover:bg-none hover:bg-slate-300  rounded-full">
-              <input id="toggle-btn" type="checkbox" >
-              <span class="slider round"></span>
-            </label>
-            <span class="px-4">
-              Monthly
-            </span>
-            
-          </div>
-          
-          
+          <!-- toggle btn -->
+          <label for="toggle-btn" class="switch bg-primary hover:bg-none hover:bg-slate-300 rounded-full">
+            <input id="toggle-btn" type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <span class="px-4"> Monthly </span>
+        </div>
       </header>
       <main class="lg:flex lg:justify-center lg:min-h-[500px] lg:items-center">
         <!-- card-1 -->
-        <div class="card font-bold"> 
+        <div class="card font-bold">
           <h4 class="title text-[#494C5F]">Basic</h4>
           <!-- <p class="price my-7">$19.99</p> -->
           <p class="price flex items-center justify-center my-7"><span class="dollar">$</span>199.99</p>
           <ul class="mb-6">
             <li class="list border-y-[1px] border-y-[#6d708d41] py-5">500 GB Storage</li>
-            <li class="list py-5">2 Users Allowed </li>
+            <li class="list py-5">2 Users Allowed</li>
             <li class="list border-y-[1px] border-y-[#6d708d41] py-5">Send up to 3 GB</li>
           </ul>
-  
+
           <button class="btn bg-primary rounded-lg text-center text-white font-bold hover:border hover:border-violet-primary hover:bg-none hover:text-violet-primary">LEARN MORE</button>
-  
         </div>
 
         <!-- card-2 -->
@@ -61,7 +51,7 @@
           <ul class="mb-6">
             <li class="list border-y-[1px] border-y-[#ffffff46] py-5">1 TB Storage</li>
             <li class="list py-5">5 Users Allowed</li>
-            <li class="list border-y-[1px] border-y-[#ffffff46] py-5">Send up to 10 GB </li>
+            <li class="list border-y-[1px] border-y-[#ffffff46] py-5">Send up to 10 GB</li>
           </ul>
           <button class="btn bg-white-ghost hover:bg-transparent text-violet-primary hover:text-white-ghost hover:border hover:border-white-ghost font-bold">LEARN MORE</button>
         </div>
@@ -70,57 +60,49 @@
         <div class="card font-bold">
           <h4 class="title">Master</h4>
           <!-- <p class="price">$39.99</p> -->
-          <p class="price flex items-center justify-center my-7"> <span class="dollar">$</span>399.99</p>
+          <p class="price flex items-center justify-center my-7"><span class="dollar">$</span>399.99</p>
           <ul class="mb-6">
-            <li class="list py-5 border-y-[1px] border-y-[#6d708d41]"> 2 TB Storage</li>
+            <li class="list py-5 border-y-[1px] border-y-[#6d708d41]">2 TB Storage</li>
             <li class="list py-5">10 Users Allowed</li>
-            <li class="list py-5 border-y-[1px] border-y-[#6d708d41]">Send up to 20 GB </li>
+            <li class="list py-5 border-y-[1px] border-y-[#6d708d41]">Send up to 20 GB</li>
           </ul>
-          <button class="btn bg-primary text-white-ghost font-bold hover:border hover:border-violet-primary hover:bg-none hover:text-violet-primary" >LEARN MORE</button>
-              
+          <button class="btn bg-primary text-white-ghost font-bold hover:border hover:border-violet-primary hover:bg-none hover:text-violet-primary">LEARN MORE</button>
         </div>
       </main>
 
-      <div class="attribution mt-6">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="hover:text-blue-600">Frontend Mentor</a>. Coded by <a href="https://github.com/fadelun" class="hover:text-blue-600">Muhammad Fadll</a>.</div>
+      <footer class="attribution mt-6">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="hover:text-blue-600">Frontend Mentor</a>. Coded by <a href="https://github.com/fadelun" class="hover:text-blue-600">Muhammad Fadll</a>.
+      </footer>
     </div>
-    
-    
+
     <script>
       // daftar harga
-      const pricesList = 
-        [
-           ["199.99", "19.99"],
-        
-           ["249.99","24.99"],
-        
-          ["399.99", "39.99"],
-        
-    ]
+      const pricesList = [
+        ["199.99", "19.99"],
 
-      const toggle = document.getElementById('toggle-btn');
-      const prices = document.querySelectorAll('.price');
+        ["249.99", "24.99"],
+
+        ["399.99", "39.99"],
+      ];
+
+      const toggle = document.getElementById("toggle-btn");
+      const prices = document.querySelectorAll(".price");
 
       // function untuk toggle button
-      toggle.addEventListener('click', () => {
-
-        
+      toggle.addEventListener("click", () => {
         [...prices].map((price, i) => {
-          if(toggle.checked){
+          if (toggle.checked) {
             // ketika toggle buttonnya diklik maka harga pada price berubah(Monthly)
 
-            price.lastChild.nodeValue  = pricesList[i][1]
-            console.log(price.lastChild.nodeValue)
-            }else{
-              // ketika toggle buttonnya diklik maka harga pada price berubah(Annually)
-              price.lastChild.nodeValue  = pricesList[i][0]
-            console.log(price.lastChild.nodeValue)
-            }
-        })
-      
-      
-    })
-
+            price.lastChild.nodeValue = pricesList[i][1];
+            console.log(price.lastChild.nodeValue);
+          } else {
+            // ketika toggle buttonnya diklik maka harga pada price berubah(Annually)
+            price.lastChild.nodeValue = pricesList[i][0];
+            console.log(price.lastChild.nodeValue);
+          }
+        });
+      });
     </script>
-
   </body>
 </html>
